@@ -1,0 +1,193 @@
+:root{
+    --dark-blue:#003D6A;
+    --ligth-blue: #009EE0;
+    --gray:#F4F2F2;
+    --white: #ffffff;
+    --dark-gray: #444444;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+
+.container{
+    background-color: aqua;
+    width: 100%;
+    height: 160vh;
+}
+
+header{
+    height: 14%;
+    background-color: var(--dark-blue);
+    overflow-x: hidden;
+}
+
+.header-top{
+    height: 60px;
+    width: 100%;
+}
+
+.header-top img {
+    height: 71px;
+    width: 200px;
+    margin: 15px 0 15px 20px;
+    
+}
+
+.divider{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.divider-left{
+    width: 55%;
+    height: 100%;
+    border-right: 8px solid  var(--ligth-blue);
+    border-bottom: 8px solid var(--ligth-blue);
+
+    transform: skew(-60deg);
+}
+.divider-rigth{
+    width: 44%;
+    height: 100%;
+    border-left: 8px solid var(--ligth-blue);
+    border-top: 8px solid var(--ligth-blue);
+
+    transform: skew(-60deg);
+}
+
+section{
+    width: 100%;
+    height: 80%;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+
+    
+section h1{
+    width: 250px;
+    margin: 0 auto;
+    top: 50px;
+    color: var(--dark-gray);
+    font-size: 30px;
+   
+}
+
+form{
+    width: 450px;
+    height: 700px;
+    color: var(--dark-gray);
+    font-weight: bold;
+    margin: 18px auto;
+
+    
+}
+
+input, button{
+    width: 450px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--gray);
+    margin-top: 5px;
+    margin-bottom: 15px; 
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:focus{
+    background-color: var(--white);
+    outline-color: var(--dark-blue);
+}
+
+input[type= "file"]{
+    display: none;
+   
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.label-file{
+    width: 100px;
+    height: 100px;
+    background-color: #003D6A;
+    padding: 8px;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.div-file{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+input[type="radio"]{
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+}
+
+.radio-button{
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    
+}
+
+.testeone{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: var(--dark-blue);
+    overflow-x: hidden;
+
+}
+
+@media (max-width: 700px){
+
+    section{
+        padding: 0;
+        padding-top: 5%;
+        height: 80%;
+    }
+
+ form{
+        width: 90% ;
+        padding: 0;
+        margin: 5% auto;
+
+    }
+    input, button{
+    
+     width: 100%;
+    }
+    }
+   
